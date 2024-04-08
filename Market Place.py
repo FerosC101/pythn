@@ -1,4 +1,3 @@
-from colorama import init, Fore, Style
 import time
 
 market = {
@@ -256,7 +255,8 @@ def marketplace(username):
     print('3. Check out basket')
     print('4. Go to bank')
     print('5. Check and Redeem points')
-    print('6. Log-out')
+    print('6. Account details')
+    print('7. Log-out')
 
     choice = input('Enter choice: ')
     if choice == '1':
@@ -270,6 +270,8 @@ def marketplace(username):
     elif choice == '5':
         redeem_and_check_points(username)
     elif choice == '6':
+        account_details(username)
+    elif choice == '7
         home_page()
     else:
         print('Invalid Input')
@@ -485,5 +487,18 @@ def redeem_and_check_points(username):
                 print('Invalid Input')
         except ValueError:
             print('Invalid input! Please enter a valid choice.')
+
+def account_details(username):
+    print("\nAccount Details:")
+    print(f"Username: {username}")
+    print(f"Balance: ${user_acc[username]['money']}")
+    print(f"Points: {user_acc[username]['points']}")
+    
+    choice = input("Enter BACK to go back to menu: ")
+    if choice.upper() == 'BACK':
+        marketplace(username)
+    else:
+        print('Invalid Input')
+        account_details(username)
 
 home_page()
