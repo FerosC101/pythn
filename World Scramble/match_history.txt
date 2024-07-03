@@ -1,0 +1,4 @@
+anjo: 4 correct guesses in 15.12 seconds on 2024-06-04 20:00:51
+mayen: 4 correct guesses in 11.37 seconds on 2024-06-04 20:01:37
+anjo: 3 correct guesses in 11.38 seconds on 2024-06-04 20:04:31
+anjo: 5 correct guesses in 12.78 seconds on 2024-06-04 20:05:09

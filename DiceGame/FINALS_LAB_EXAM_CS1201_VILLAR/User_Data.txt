@@ -1,0 +1,2 @@
+admin,adminpass,0
+kay,12345678,0
